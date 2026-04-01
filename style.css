@@ -1,0 +1,148 @@
+/* Жалпы реттеулер */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Визитканың негізгі қорабы */
+.card {
+    background: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Меңзерді апарғанда жоғары көтеріледі */
+}
+
+/* Сурет стилі */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.title {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Әлеуметтік желілер */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.insta { background: #e1306c; }
+.tele { background: #0088cc; }
+.git { background: #333; }
+
+.social-btn:hover { opacity: 0.8; transform: scale(1.1); }
+
+/* Байланыс батырмасы */
+.contact-btn {
+    display: block;
+    text-decoration: none;
+    background: #667eea;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #764ba2;
+}   
+
+
+/* Базалық стильдерге өзгеріс: */
+.card {
+    background: rgba(222, 222, 235, 0.975);
+    /* Енін нақты 350px емес, пайызбен берген дұрыс */
+    width: 90%; 
+    max-width: 350px; /* Бірақ 350px-ден аспасын */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 20px; /* Телефонда жиектерге жабысып қалмауы үшін */
+}
+
+/* --- МЕДИА СҰРАНЫСТАР (Адаптацияның жүрегі) --- */
+
+/* Экран 480px-ден кіші болса (Smartphones) */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px; /* Ішкі бос орынды азайтамыз */
+    }
+
+    h1 {
+        font-size: 24px; /* Тақырыпты кішірейтеміз */
+    }
+
+    .profile-img {
+        width: 100px; /* Суретті де сәл кішірейтеміз */
+        height: 100px;
+    }
+
+    .description {
+        font-size: 13px; /* Мәтін де кішірейеді */
+    }
+
+    .social-links {
+        gap: 10px; /* Батырмалар арасын жақындатамыз */
+    }
+}
+
+/* Экран өте кішкентай болса (мысалы, ескі телефондар 320px) */
+@media (max-width: 320px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+.whatsapp { background: #25D366; } /* WhatsApp-тың ресми жасыл түсі */
