@@ -1,8 +1,12 @@
 /* Жалпы реттеулер */
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    display: flex;             /* 1. Flexbox режимін қосады */
+    justify-content: center;    /* 2. Көлденеңінен (горизонтально) ортаға қояды */
+    align-items: center;        /* 3. Тігінен (вертикально) ортаға қояды */
+    min-height: 100vh;          /* 4. Экранның 100% биіктігін алады */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Визитканың негізгі қорабы */
